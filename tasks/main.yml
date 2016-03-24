@@ -1,0 +1,4 @@
+---
+# tasks file for check-mk-agent
+- include: install.yml
+- include: service.yml

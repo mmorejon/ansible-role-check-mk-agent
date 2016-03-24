@@ -1,0 +1,19 @@
+---
+# filename: roles/checkmk/tasks/install.yml
+- name: Download agent from your Check Mk server
+  get_url:
+    url: "{{ checkmk['url'] }}{{ checkmk['package']['name'] }}"
+    dest: "{{ checkmk['dest'] }}"
+    mode: 755
+
+- name: Install dependencies
+  apt:
+    name: "{{ checkmk['dependency'] }}"
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Install Check MK agent.
+  apt:
+    deb: "{{ checkmk['dest'] }}{{ checkmk['package']['name'] }}"
+  notify:
+    - restart xinetd service
