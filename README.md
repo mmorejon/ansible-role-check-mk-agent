@@ -1,6 +1,8 @@
 check_mk_agent
 =========
 
+[![Build Status](https://travis-ci.org/mmorejon/ansible-check-mk-agent.svg?branch=master)](https://travis-ci.org/mmorejon/ansible-check-mk-agent)
+
 Ansible role for installing Check MK Agent.
 
 Requirements
