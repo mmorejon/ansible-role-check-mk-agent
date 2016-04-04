@@ -1,10 +1,11 @@
 ---
 # defaults file for check-mk-agent
+update_cache: true
 checkmk:
   url: http://server/default/check_mk/agents/
   dest: /tmp/
   package:
-    name: check-mk-agent_1.2.6p10-1_all.deb
+    name: check-mk-agent_1.2.6p16-1_all.deb
   dependency: xinetd
   service:
     name: xinetd

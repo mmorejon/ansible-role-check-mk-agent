@@ -9,7 +9,7 @@
 - name: Install dependencies
   apt:
     name: "{{ checkmk['dependency'] }}"
-    update_cache: yes
+    update_cache: "{{ update_cache }}"
     cache_valid_time: 3600
 
 - name: Install Check MK agent.
