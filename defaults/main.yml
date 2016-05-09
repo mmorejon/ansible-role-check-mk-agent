@@ -5,7 +5,7 @@ checkmk:
   url: http://server/default/check_mk/agents/
   dest: /tmp/
   package:
-    name: check-mk-agent_1.2.6p16-1_all.deb
+    name: check-mk-agent_1.2.8-1_all.deb
   dependency: xinetd
   service:
     name: xinetd
