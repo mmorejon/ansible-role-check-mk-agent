@@ -16,4 +16,4 @@
   apt:
     deb: "{{ checkmk['dest'] }}{{ checkmk['package']['name'] }}"
   notify:
-    - restart xinetd service
+    - restart checkmk service
