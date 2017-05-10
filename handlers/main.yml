@@ -1,6 +1,6 @@
 ---
 # handlers file for check-mk-agent
-- name: restart check mk service
+- name: restart checkmk service
   service:
     name: "{{ checkmk['service']['name'] }}"
     state: restarted

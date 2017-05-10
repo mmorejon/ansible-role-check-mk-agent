@@ -1,6 +1,6 @@
 ---
 # filename: roles/checkmk/tasks/service.yml
-- name: start xinetd service
+- name: start checkmk service
   service:
     name: "{{ checkmk['service']['name'] }}"
     state: started
